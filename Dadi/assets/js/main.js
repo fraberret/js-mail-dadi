@@ -15,17 +15,19 @@ document.querySelector('form').addEventListener('submit', function(e){
 
 if (random1>random2) {
     console.log('User 1 vince' );
-    results.innerHTML='User 1 vince'
+    results.innerHTML='<div class="alert alert-success mt-3">User 1 vince</div>'
     
 } else if (random1==random2) {
     console.log('Parità');
-    results.innerHTML='Parità'
+    results.innerHTML='<div class="alert alert-warning mt-3">Parità</div>'
     
 
 }else{
     console.log('Computer vince');
-    results.innerHTML='Computer vince'
+    results.innerHTML='<div class="alert alert-danger mt-3">Computer vince</div>'
 }
+
+results.innerHTML+='<div class="alert alert-dark mt-3">To play another game, refresh the page</div>'
 
 })
 
