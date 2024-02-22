@@ -14,6 +14,11 @@ console.log(`Computer: ${random2}`);;
 if (random1>random2) {
     console.log('User 1 vince' );
     
-} else{
+    
+} else if (random1=random2) {
+    console.log('Parità');
+    
+
+}else{
     console.log('Computer vince');
 }
