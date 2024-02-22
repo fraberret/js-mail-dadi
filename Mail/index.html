@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mail</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
 <body>
-    <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-        </div>
-        
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+    <div class="container">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+            </div>
+            <div id="answer"></div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+            <div class="mail-list">
+                <h3 class="text-center">Try this mail List</h3>
+                <ul class="p-0 m-0 card d-flex align-items-center ">
+                    <li>pinco.pallino@gmail.com </li>
+                    <li> pallino.pinco@gmail.com</li>
+                    <li>pippo.paperino@gmail.com</li>
+                </ul>
+                
+                
+            </div>
+        </form>
+    </div>
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>

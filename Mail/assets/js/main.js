@@ -1,8 +1,7 @@
-console.log("it works");
-
 //creare un array che contiene varie mail
 let emails=['pinco.pallino@gmail.com' , 'pallino.pinco@gmail.com' , 'pippo.paperino@gmail.com' ]
 
+let risposta = document.getElementById("answer")
 
 document.querySelector('form').addEventListener('submit', function(e){
     e.preventDefault()
@@ -11,21 +10,22 @@ document.querySelector('form').addEventListener('submit', function(e){
     let userMail= document.getElementById('email').value
     
     //creare una costante che indica mail non trovata
-    let find = 'Non trovata'
+    let find = document.innerHTML= '<div id="answer" class="py-3 color_red">Inserisci Email corretta</div>'
     
     //creare un ciclo 
     for (let i = 0; i < emails.length; i++) {
     let email = emails[i];
-    console.log(email);
+    //console.log(email);
     
     //creare SE mail=trovata stampa "mail trovata"
     if (email==userMail) {
-        find="Trovata"
+        find='<div id="answer" class="py-3 color_green "> Mail corretta</div>'
         
     }
     
 }
 //stampa i risultati
-console.log(find);
+risposta.innerHTML=find
+//console.log(find);
 })
 
