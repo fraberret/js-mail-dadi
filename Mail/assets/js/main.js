@@ -10,7 +10,7 @@ document.querySelector('form').addEventListener('submit', function(e){
     let userMail= document.getElementById('email').value
     
     //creare una costante che indica mail non trovata
-    let find = document.innerHTML= '<div id="answer" class="py-3 color_red">Inserisci Email corretta</div>'
+    let find = document.innerHTML= '<div class= "alert alert-danger" role="alert">Inserisci Email corretta</div>'
     
     //creare un ciclo 
     for (let i = 0; i < emails.length; i++) {
@@ -19,7 +19,7 @@ document.querySelector('form').addEventListener('submit', function(e){
     
     //creare SE mail=trovata stampa "mail trovata"
     if (email==userMail) {
-        find='<div id="answer" class="py-3 color_green "> Mail corretta</div>'
+        find='<div class= "alert alert-success" role="alert"> Email corretta</div>'
         
     }
     
