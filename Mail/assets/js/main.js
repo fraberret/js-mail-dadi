@@ -8,10 +8,14 @@ let userMail= 'pinco.pallino@gmail.com'
 let find = 'Non trovata'
 //creare un ciclo 
 for (let i = 0; i < emails.length; i++) {
-    const email = emails[i];
+    let email = emails[i];
     console.log(email);
+    //creare SE mail=trovata stampa "mail trovata"
+    if (email=userMail) {
+        find='Trovata'
+        
+    }
     
 }
-//creare SE mail=trovata stampa "mail trovata"
 //stampa i risultati
 console.log(find);
